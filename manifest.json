@@ -1,0 +1,35 @@
+{
+  "name": "Enfit Extensions",
+  "description" : "Base Level Extension",
+  "version": "1.0",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_popup": "index.html",
+    "default_icon": "./images/icon.png"
+  },
+  "background": {
+    "scripts": ["jquery-3.2.1.slim.min.js", "background.js"],
+    "persistent": false
+  },
+  "permissions": [
+    "storage",
+    "activeTab",
+    "tabs",
+    "*://dev.sun-asterisk.com/*"
+  ],
+  "content_scripts": [{
+    "matches": ["*://dev.sun-asterisk.com/*"],
+    "js": [
+      "jquery-3.2.1.slim.min.js"
+    ]
+  }],
+  "commands": {
+      "_execute_browser_action": {
+        "suggested_key": {
+          "default": "Ctrl+Shift+F",
+          "mac": "MacCtrl+Shift+F"
+        },
+        "description": "Opens index.html"
+      }
+    }
+}

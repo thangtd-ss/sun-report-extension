@@ -1,0 +1,17 @@
+/*Manifest Note*/
+---Name---
+  Dinh nghia ten extensions
+---description---
+  Mo ta cong dung cua extensions
+---version---
+  Version cua extension
+---manifest_version---
+  version hien tai cua chrome extensions
+---browser_action---
+  +default_popup
+    giao dien dau tien khi ta click vao extensions
+  +default_icon
+    icon cua extension
+---commands---
+---Name---
+---Name---
